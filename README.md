@@ -7,8 +7,6 @@
 ## Workflow
 ![](http://yusukematsui.me/project/sis/img/overview.png)
 
-## News
-- [2020.06] Updated many parts of the code for [CVPR 2020 tutorial](https://matsui528.github.io/cvpr2020_tutorial_retrieval/)
 
 
 ## Overview
@@ -20,7 +18,6 @@
 
 ## Links
 - [Demo](https://www.simple-image-search.xyz/)
-- [Course at CVPR2020](https://matsui528.github.io/cvpr2020_tutorial_retrieval/) [[slides](https://speakerdeck.com/matsui_528/cvpr20-tutorial-live-coding-demo-to-implement-an-image-search-engine-from-scratch)] [[video](https://www.youtube.com/watch?v=M0Y9_vBmYXU)]
 - [Project page](http://yusukematsui.me/project/sis/sis.html)
 - [Tutorial](https://ourcodeworld.com/articles/read/981/how-to-implement-an-image-search-engine-using-keras-tensorflow-with-python-3-in-ubuntu-18-04) and [Video](https://www.youtube.com/watch?v=Htu7b8PUyRg) by [@sdkcarlos](https://github.com/sdkcarlos)
 
@@ -40,20 +37,13 @@ python offline.py
 python server.py
 ```
 
-## Advanced: Launch on AWS
-- You can easily launch the search engine server on AWS EC2. Please first open the port 5000 and launch an EC2 instance. Note that you need to create a security group such that the port 5000 is opened.
-- A middle-level CPU instance is sufficient, e.g., m5.large.
-- After you log-in to the instance by ssh, please setup the python environment (e.g., by [anaconda](https://docs.anaconda.com/anaconda/install/linux/)).
-- Run `offline.py` and `server.py`.
-- After you run `python server.py`, you can access the server from your browser via something like `http://ec2-XX-XX-XXX-XXX.us-west-2.compute.amazonaws.com:5000`
-- (Advanced) If you'd like to deploy the system in a secure way, please consider running the search engine with the usual web server, e.g., uWSGI + nginx.
-- (Advanced) If you want to deploy the system serverlessly, [AWS AppRunner](https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html) is the way to go.
+
 
 
 ## Citation
 
     @misc{sis,
-	    author = {Yusuke Matsui},
+	    author = {Anmol Sirola},
 	    title = {Simple Image Search Engine},
-	    howpublished = {\url{https://github.com/matsui528/sis}}
+	    howpublished = {\url{https://AnmolSirola/Image-Search-Engine}}
     }
